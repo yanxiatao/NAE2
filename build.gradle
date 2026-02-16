@@ -429,6 +429,9 @@ repositories {
             url 'https://maven.cleanroommc.com'
         }
         maven {
+    url = uri("https://repo.cleanroommc.com/releases")
+}
+        maven {
             name 'BlameJared Maven'
             url 'https://maven.blamejared.com'
         }
