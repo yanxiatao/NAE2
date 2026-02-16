@@ -170,7 +170,10 @@ public class Parts implements Definitions<DamagedItemDefinition> {
 			@Override
 			public void addCheckedInformation(ItemStack stack, World world, List<String> lines,
 			                                  ITooltipFlag advancedTooltips) {
-				lines.add(I18n.format("item.nae2.part.pcc_notifier.desc"));
+				lines.add(I18n.format("item.nae2.part.pcc_notifier.desc.1"));
+				lines.add();
+				lines.add();
+				lines.add(I18n.format("item.nae2.part.pcc_notifier.desc.2"));
 			}
 		};
 
