@@ -39,7 +39,7 @@ public abstract class MixinDualityInterface {
 	private Set<ICraftingPatternDetails> craftingList;
 
 	@Shadow
-	protected abstract void updateCraftingList();
+	private void updateCraftingList() {};
 
 	@Inject(
 		method = "pushPattern",
