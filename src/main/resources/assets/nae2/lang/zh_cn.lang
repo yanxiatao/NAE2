@@ -48,11 +48,11 @@ item.nae2.upgrade.hyper_acceleration.name=超速卡
 item.nae2.upgrade.auto_complete.name=工作自动完成卡
 item.nae2.upgrade.auto_complete.desc=自动完成作业，无需等待输出。
 item.nae2.upgrade.gregtech_circuit.name=编程电路卡
-item.nae2.upgrade.gregtech_circuit.desc=自动在机器和总线上设置编程电路。\n需要在编码样板中放置相关的电路。\n不要忘记启用阻塞模式！\n\n对不起，Seni.
+item.nae2.upgrade.gregtech_circuit.desc="自动在机器和总线上设置编程电路。\n需要在编码样板中放置相关的电路。\n不要忘记启用阻塞模式！\n\n对不起，Seni."
 
 # Tiles
 tile.nae2.reconstruction_chamber.name=原子再构室
-tile.nae2.reconstruction_chamber.desc=实用拓展模组的原子再构机可对其中的物品进行转换。不再需要处理掉落物了！\n\n成品将自动输出至相邻的物品存储空间或ME接口中。
+tile.nae2.reconstruction_chamber.desc="实用拓展模组的原子再构机可对其中的物品进行转换。不再需要处理掉落物了！\n\n成品将自动输出至相邻的物品存储空间或ME接口中。"
 tile.nae2.coprocessor_4x.name=§b4x§r并行处理单元
 tile.nae2.coprocessor_16x.name=§d16x§r并行处理单元
 tile.nae2.coprocessor_64x.name=§964x§r并行处理单元
@@ -66,7 +66,7 @@ tile.nae2.exposer.name=ME存储暴露器
 nae2.pattern_multiplier.unencode=清除
 nae2.pattern_multiplier.unencode.desc=清除所有编码样板的配置。该操作无法回退！
 nae2.pattern_multiplier.replace=替换
-nae2.pattern_multiplier.replace.desc=在所有编码样板的配置中匹配第一个槽位的物品并将其替换为第二个槽位的物品。§4该操作无法回退！§7\n\n§c红色§7表示物品已成功匹配，但替换后的样板无效。将跳过该槽位的操作。\n\n§a绿色§7表示物品已成功匹配，替换操作将正常进行。
+nae2.pattern_multiplier.replace.desc="在所有编码样板的配置中匹配第一个槽位的物品并将其替换为第二个槽位的物品。§4该操作无法回退！§7\n\n§c红色§7表示物品已成功匹配，但替换后的样板无效。将跳过该槽位的操作。\n\n§a绿色§7表示物品已成功匹配，替换操作将正常进行。"
 nae2.pattern_multiplier.tab.multiply=倍增
 nae2.pattern_multiplier.tab.replace=替换
 
