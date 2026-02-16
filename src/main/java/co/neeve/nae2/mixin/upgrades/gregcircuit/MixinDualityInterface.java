@@ -27,7 +27,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.Set;
 import java.util.WeakHashMap;
 
-@Mixin(value = DualityInterface.class, remap = true)
+@Mixin(value = DualityInterface.class, remap = false)
 public abstract class MixinDualityInterface {
 	@Unique
 	private WeakHashMap<ICraftingPatternDetails, Integer> nae2$cachedCircuitValues = null;
