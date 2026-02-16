@@ -42,17 +42,25 @@ item.nae2.material.cell_part_gas_16384k.name=§a16384k§r-ME气体存储组件
 # Parts
 item.nae2.part.beam_former.name=ME光束成型器
 item.nae2.part.exposer.name=ME存储暴露器
+item.nae2.part.pcc_notifier.name=ME编程电路通知器
+item.nae2.part.pcc_notifier.desc.1=修改指向的机器/总线的虚拟电路；仅当与安装编程电路卡并推送样板的ME接口处于同一网络时生效。
+item.nae2.part.pcc_notifier.desc.2= 
+item.nae2.part.pcc_notifier.desc.3= 自动化你的多方块。
 
 # Upgrades
 item.nae2.upgrade.hyper_acceleration.name=超速卡
 item.nae2.upgrade.auto_complete.name=工作自动完成卡
 item.nae2.upgrade.auto_complete.desc=自动完成作业，无需等待输出。
 item.nae2.upgrade.gregtech_circuit.name=编程电路卡
-item.nae2.upgrade.gregtech_circuit.desc="自动在机器和总线上设置编程电路。\n需要在编码样板中放置相关的电路。\n不要忘记启用阻塞模式！\n\n对不起，Seni."
+item.nae2.upgrade.gregtech_circuit.desc.1=自动在机器和总线上设置编程电路。
+item.nae2.upgrade.gregtech_circuit.desc.2=需要在编码样板中放置相关的电路。
+item.nae2.upgrade.gregtech_circuit.desc.3=不要忘记启用阻塞模式！
+item.nae2.upgrade.gregtech_circuit.desc.4= 
+item.nae2.upgrade.gregtech_circuit.desc.5=对不起，Seni.
 
 # Tiles
 tile.nae2.reconstruction_chamber.name=原子再构室
-tile.nae2.reconstruction_chamber.desc="实用拓展模组的原子再构机可对其中的物品进行转换。不再需要处理掉落物了！\n\n成品将自动输出至相邻的物品存储空间或ME接口中。"
+tile.nae2.reconstruction_chamber.desc=实用拓展模组的原子再构机可对其中的物品进行转换。不再需要处理掉落物了！\n\n成品将自动输出至相邻的物品存储空间或ME接口中。
 tile.nae2.coprocessor_4x.name=§b4x§r并行处理单元
 tile.nae2.coprocessor_16x.name=§d16x§r并行处理单元
 tile.nae2.coprocessor_64x.name=§964x§r并行处理单元
