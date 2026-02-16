@@ -147,7 +147,11 @@ public class Upgrades implements DamagedDefinitions<DamagedItemDefinition, Upgra
 			@Override
 			public void addCheckedInformation(ItemStack stack, World world, List<String> lines,
 			                                  ITooltipFlag advancedTooltips) {
-				lines.add(I18n.translateToLocal("item.nae2.upgrade.gregtech_circuit.desc"));
+				lines.add(I18n.translateToLocal("item.nae2.upgrade.gregtech_circuit.desc.1"));
+				lines.add(I18n.translateToLocal("item.nae2.upgrade.gregtech_circuit.desc.2"));
+				lines.add(I18n.translateToLocal("item.nae2.upgrade.gregtech_circuit.desc.3"));
+				lines.add();
+				lines.add(I18n.translateToLocal("item.nae2.upgrade.gregtech_circuit.desc.4"));
 			}
 		};
 
