@@ -1,6 +1,10 @@
 name: Build
 
+<<<<<<< HEAD
 on: [ push , workflow_dispatch ]
+=======
+on: [ push, workflow_dispatch ]
+>>>>>>> 6c797228131f2d88bac72b39fa5bce35564c9e97
 
 jobs:
   build:
