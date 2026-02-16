@@ -51,10 +51,10 @@ public class Items implements Definitions<IItemDefinition> {
 	private final IItemDefinition storageCellFluid1024K;
 	private final IItemDefinition storageCellFluid4096K;
 	private final IItemDefinition storageCellFluid16384K;
-//	private final IItemDefinition storageCellGas256K;
-//	private final IItemDefinition storageCellGas1024K;
-//	private final IItemDefinition storageCellGas4096K;
-//	private final IItemDefinition storageCellGas16384K;
+	private final IItemDefinition storageCellGas256K;
+	private final IItemDefinition storageCellGas1024K;
+	private final IItemDefinition storageCellGas4096K;
+	private final IItemDefinition storageCellGas16384K;
 	private final IItemDefinition virtualPattern;
 
 	public Items(Registry registry) {
@@ -84,14 +84,6 @@ public class Items implements Definitions<IItemDefinition> {
 			registry.item("fluid_storage_cell_void", VoidFluidCell::new)
 				.features(Features.VOID_CELLS)
 				.build());
-<<<<<<< HEAD
-/*
-		this.gasStorageCellVoid = this.registerById(
-			registry.item("gas_storage_cell_void", VoidGasCell::new)
-				.features(Features.VOID_CELLS, Features.DENSE_GAS_CELLS)
-				.build());
-*/
-=======
 
 		if (Features.DENSE_GAS_CELLS.isEnabled())
 			this.gasStorageCellVoid = this.registerById(
@@ -101,11 +93,10 @@ public class Items implements Definitions<IItemDefinition> {
 		else
 			this.gasStorageCellVoid = new ItemDefinition("gas_storage_cell_void", null);
 
->>>>>>> 6c797228131f2d88bac72b39fa5bce35564c9e97
 		var voidCells = new Object2ObjectArrayMap<String, IItemDefinition>();
 		if (this.storageCellVoid.isEnabled()) voidCells.put("item", this.storageCellVoid);
 		if (this.fluidStorageCellVoid.isEnabled()) voidCells.put("fluid", this.fluidStorageCellVoid);
-		//if (this.gasStorageCellVoid.isEnabled()) voidCells.put("gas", this.gasStorageCellVoid);
+		if (this.gasStorageCellVoid.isEnabled()) voidCells.put("gas", this.gasStorageCellVoid);
 
 		registry.addBootstrapComponent((IPostInitComponent) r -> {
 			if (!voidCells.isEmpty()) {
@@ -178,14 +169,6 @@ public class Items implements Definitions<IItemDefinition> {
 					(int) Math.pow(2, 14)))
 			.features(Features.DENSE_FLUID_CELLS)
 			.build());
-<<<<<<< HEAD
-/*
-		this.storageCellGas256K = this.registerById(registry.item("storage_cell_gas_256k", () ->
-				new DenseGasCell(Materials.MaterialType.CELL_GAS_PART_256K,
-					(int) Math.pow(2, 8)))
-			.features(Features.DENSE_GAS_CELLS)
-			.build());
-=======
 
 		if (Features.DENSE_GAS_CELLS.isEnabled()) {
 			this.storageCellGas256K = this.registerById(registry.item("storage_cell_gas_256k", () ->
@@ -193,7 +176,6 @@ public class Items implements Definitions<IItemDefinition> {
 									(int) Math.pow(2, 8)))
 					.features(Features.DENSE_GAS_CELLS)
 					.build());
->>>>>>> 6c797228131f2d88bac72b39fa5bce35564c9e97
 
 			this.storageCellGas1024K = this.registerById(registry.item("storage_cell_gas_1024k", () ->
 							new DenseGasCell(Materials.MaterialType.CELL_GAS_PART_1024K,
@@ -219,16 +201,7 @@ public class Items implements Definitions<IItemDefinition> {
 			this.storageCellGas16384K = new ItemDefinition("storage_cell_gas_16384k", null);
 		}
 
-<<<<<<< HEAD
-		this.storageCellGas16384K = this.registerById(registry.item("storage_cell_gas_16384k", () ->
-				new DenseGasCell(Materials.MaterialType.CELL_GAS_PART_16384K,
-					(int) Math.pow(2, 14)))
-			.features(Features.DENSE_GAS_CELLS)
-			.build());
-*/
-=======
 
->>>>>>> 6c797228131f2d88bac72b39fa5bce35564c9e97
 		registry.addBootstrapComponent((IPostInitComponent) r -> {
 			var items = AEApi.instance().definitions().items();
 			var cellDef = items.cell1k();
@@ -252,7 +225,7 @@ public class Items implements Definitions<IItemDefinition> {
 					this.fluidStorageCellVoid
 				});
 			}
-/*
+
 			if (Features.DENSE_GAS_CELLS.isEnabled()) {
 				mirrorCellUpgrades(DenseGasCell.getBaseCell(), new IItemDefinition[]{
 					this.storageCellGas256K,
@@ -261,7 +234,7 @@ public class Items implements Definitions<IItemDefinition> {
 					this.storageCellGas16384K,
 					this.gasStorageCellVoid
 				});
-			}*/
+			}
 		});
 	}
 
@@ -309,11 +282,11 @@ public class Items implements Definitions<IItemDefinition> {
 	public IItemDefinition fluidStorageCellVoid() {
 		return this.fluidStorageCellVoid;
 	}
-/*
+
 	public IItemDefinition gasStorageCellVoid() {
 		return this.gasStorageCellVoid;
 	}
-*/
+
 	public IItemDefinition virtualPattern() {
 		return this.virtualPattern;
 	}
@@ -349,7 +322,7 @@ public class Items implements Definitions<IItemDefinition> {
 	public IItemDefinition storageCellFluid16384K() {
 		return this.storageCellFluid16384K;
 	}
-/*
+
 	public IItemDefinition storageCellGas256K() {
 		return this.storageCellGas256K;
 	}
@@ -365,5 +338,4 @@ public class Items implements Definitions<IItemDefinition> {
 	public IItemDefinition storageCellGas16384K() {
 		return this.storageCellGas16384K;
 	}
-	*/
 }
